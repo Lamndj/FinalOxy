@@ -1,0 +1,36 @@
+.memberImg{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.memberBio{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.memberCard{
+    width: 70%;
+    margin: 5% auto;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+}
+
+.fab{
+    margin: 50px;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-instagram{
+    color: #3f729b;
+}
+
+.fa-twitter{
+    color: #00acee;
+}

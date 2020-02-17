@@ -1,0 +1,39 @@
+@keyframes typeWriter {
+    0% { width: 0;}
+    100% {width:100%}
+}
+
+.contactus{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.contactus h3{
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-bottom: 50px; */
+    animation: typeWriter 1s 1s steps(40,end);
+    white-space: nowrap;
+    margin: 0 auto 50px auto;
+    overflow: hidden;
+    animation-fill-mode: backwards;
+}
+
+.contactus input,textarea{
+    margin-bottom: 30px;
+    border-radius: 15px;
+    height: 50px;
+    border: 1px solid black;
+    padding-left: 20px;
+    outline: none;
+}
+
+.contactus textarea{
+    padding-top: 13px;
+}
+
+.contactus button{
+    margin: 0 auto;
+}
