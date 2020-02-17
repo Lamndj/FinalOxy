@@ -6,6 +6,8 @@ import Zoom from "react-reveal/Zoom"
 import LightSpeed from 'react-reveal/LightSpeed';
 import Fade from "react-reveal/Fade"
 import Roll from "react-reveal/Roll"
+import {IconContext} from "react-icons"
+import {FaFacebookSquare,FaInstagram,FaTwitter} from "react-icons/fa"
 
 import "../components/SingleMember/SingleMember.css"
 
@@ -13,6 +15,7 @@ export default function Member({data}) {
         
     return (
         <>
+        <script src="https://kit.fontawesome.com/733b0420c0.js" crossorigin="anonymous"></script>
         <Navbar title="Meet Our Gems"/>
         {data.allMarkdownRemark.edges.map(({node}) => 
             <div className="memberCard">
@@ -21,9 +24,21 @@ export default function Member({data}) {
                 </div>
                 <div className="socialMedia">
                 <Roll right duration={500} delay={500}>
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.facebook.com">
+                        <IconContext.Provider value={{ className: "fa-facebook", size:"2.5em"}}>
+                        <FaFacebookSquare/>
+                        </IconContext.Provider>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <IconContext.Provider value={{ className: "fa-instagram", size:"2.5em"}}>
+                        <FaInstagram/>
+                        </IconContext.Provider>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <IconContext.Provider value={{ className: "fa-twitter", size:"2.5em"}}>
+                        <FaTwitter/>
+                        </IconContext.Provider>
+                    </a>
                 </Roll>
                 </div>
                 <div className="memberBio">
